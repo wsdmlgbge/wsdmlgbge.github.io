@@ -3,7 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>My test page</title>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+    />
   </head>
   <body>
+    <p>啥也没有a</p>
+  <!-- 评论系统 -->
+  <div id="waline"></div>
+  <script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs
+    init({
+      el: '#waline',
+      serverURL: 'https://your-domain.vercel.app',
+    });
+  </script>
   </body>
 </html>
